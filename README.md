@@ -11,7 +11,7 @@ Web visual y personalizable para generar tu horario de clase, desarrollada con V
 1. Clona el repositorio y muévete a la carpeta del repositorio:
 
 ```sh
-git clone https://github.com/JuaanGB/HorariGohttps://github.com/JuaanGB/HorariGo
+git clone https://github.com/JuaanGB/HorariGo
 cd HorariGo
 ```
 
