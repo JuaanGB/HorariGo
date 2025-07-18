@@ -66,3 +66,11 @@ export const colores = {
 ---
 
 Proyecto desarrollado con ❤️ para estudiantes organizados y amantes del frontend.
+
+## Aclaraciones
+
+- Este proyecto **no** trata de ser una web 100% funcional con backend o base de datos.
+
+- Los datos se almacenan y gestionan completamente en el **frontend**, lo que lo hace ideal como herramienta auxiliar o de planificación personal.
+
+- La intención es ofrecer una interfaz sencilla y flexible para que los estudiantes organicen visualmente sus horarios.
