@@ -1,35 +1,68 @@
-# SmartWay
+# HorariGo
 
-This template should help get you started developing with Vue 3 in Vite.
+Web visual y personalizable para generar tu horario de clase, desarrollada con Vue 3 + Vite + Pinia.
 
-## Recommended IDE Setup
+## Requisitos
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Node.js ≥ 18
 
-## Customize configuration
+## Clonado y ejecución del proyecto
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. Clona el repositorio y muévete a la carpeta del repositorio:
 
-## Project Setup
+```sh
+git clone https://github.com/JuaanGB/HorariGohttps://github.com/JuaanGB/HorariGo
+cd HorariGo
+```
+
+2. Instala las dependencias:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. Lanza el entorno de desarrollo:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Estructura de datos (`src/stores/datos.js`)
 
-```sh
-npm run build
+Este fichero contiene los datos del horario. Debes introducirlos manualmente en el siguiente formato:
+
+```js
+export const clases = [
+
+  /* Ejemplo de clase:
+  {
+    asignatura: "A",            // Nombre corto de la asignatura
+    tipo: "LM",                 // Tipo de clase: LM, Lab, etc.
+    curso: 2,                   // Curso (numérico)
+    cuatri: 1,                  // Cuatrimestre (1 o 2)
+    grupo: 1,                   // Grupo general
+    subgrupo: "1",              // Subgrupo o null si no aplica
+    dia: 0,                     // Día (0 = Lunes, 1 = Martes, ..., 6 = Domingo)
+    hora_inicio: "09:00",       // Hora de inicio en formato HH:mm
+    hora_fin: "10:00"           // Hora de fin en formato HH:mm
+  }
+  */
+
+]
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+También se define un mapa de colores para cada asignatura:
 
-```sh
-npm run lint
+```js
+// Mapa con colores Tailwind para las asignaturas
+export const colores = {
+  // Ejemplo:
+  // A: "blue",
+}
 ```
+
+> ✅ Colores válidos: `red`, `green`, `yellow`, `blue`, `purple`, `orange`, etc.
+
+---
+
+Proyecto desarrollado con ❤️ para estudiantes organizados y amantes del frontend.
